@@ -1,0 +1,1473 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    height: 70px;
+    padding: 0 7%;
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+header h2 {
+    font-size: 26px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #374151;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 7%;
+
+    background: linear-gradient(
+        135deg,
+        #eef4ff,
+        #ffffff
+    );
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    line-height: 1.7;
+    color: #6b7280;
+    margin-bottom: 30px;
+}
+
+
+/* ================= BUTTON ================= */
+
+.btn {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    background: #2563eb;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+}
+
+
+/* ================= FEATURES ================= */
+
+.features {
+    padding: 80px 7%;
+    text-align: center;
+}
+
+.features > h2 {
+    font-size: 35px;
+    margin-bottom: 45px;
+}
+
+.feature-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.feature-card {
+    background: white;
+
+    width: 30%;
+    padding: 35px 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+}
+
+.feature-card h3 {
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #111827;
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 0 5%;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 60px 5%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .feature-container {
+        flex-direction: column;
+    }
+
+    .feature-card {
+        width: 100%;
+    }
+}
+/* ================= AUTH PAGE ================= */
+
+.auth-page {
+    min-height: calc(100vh - 70px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 430px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.auth-card h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.auth-subtitle {
+    text-align: center;
+    color: #6b7280;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #2563eb;
+}
+
+.auth-btn {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #2563eb;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.auth-btn:hover {
+    background: #1d4ed8;
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 25px;
+
+    color: #6b7280;
+}
+
+.auth-footer a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+/* ================= DASHBOARD ================= */
+
+.dashboard {
+    padding: 50px 7%;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 35px;
+}
+
+.dashboard-header h1 {
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+
+.dashboard-header p {
+    color: #6b7280;
+}
+
+.subscription-badge {
+    padding: 10px 18px;
+
+    background: #dcfce7;
+    color: #166534;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+}
+
+
+/* ================= STATS ================= */
+
+.stats {
+    display: flex;
+    gap: 20px;
+
+    margin-bottom: 60px;
+}
+
+.stat-card {
+    background: white;
+
+    flex: 1;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.stat-card h3 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.stat-card p {
+    color: #6b7280;
+}
+
+
+/* ================= COURSES ================= */
+
+.courses h2 {
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.course-container {
+    display: flex;
+    gap: 25px;
+}
+
+.course-card {
+    background: white;
+
+    flex: 1;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.course-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.course-card h3 {
+    margin-bottom: 10px;
+}
+
+.course-card p {
+    color: #6b7280;
+
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+}
+
+
+/* ================= PROGRESS ================= */
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+
+    background: #e5e7eb;
+
+    border-radius: 10px;
+
+    margin-bottom: 8px;
+}
+
+.progress {
+    width: 65%;
+    height: 100%;
+
+    background: #2563eb;
+
+    border-radius: 10px;
+}
+
+.mysql-progress {
+    width: 40%;
+}
+
+.web-progress {
+    width: 80%;
+}
+
+.course-card span {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+
+/* ================= COURSE BUTTON ================= */
+
+.course-card button {
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.course-card button:hover {
+    background: #1d4ed8;
+}
+
+
+/* ================= PREMIUM ================= */
+
+.premium-section {
+    margin-top: 70px;
+
+    padding: 40px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.premium-section h2 {
+    margin-bottom: 10px;
+}
+
+.premium-section > p {
+    color: #6b7280;
+
+    margin-bottom: 25px;
+}
+
+.premium-content {
+    display: flex;
+    gap: 20px;
+}
+
+.premium-content div {
+    flex: 1;
+
+    padding: 20px;
+
+    background: #f5f7fb;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+}
+
+
+/* ================= DASHBOARD MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    .dashboard {
+        padding: 30px 5%;
+    }
+
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+
+    .course-container {
+        flex-direction: column;
+    }
+
+    .premium-content {
+        flex-direction: column;
+    }
+}
+/* ================= ABOUT PAGE ================= */
+
+.about-page {
+    padding: 60px 7%;
+}
+
+.about-hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.about-hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.about-hero p {
+    color: #6b7280;
+    font-size: 18px;
+}
+
+
+/* ABOUT CARDS */
+
+.about-content {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.about-card {
+    flex: 1;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.about-card h2 {
+    margin-bottom: 15px;
+}
+
+.about-card p {
+    color: #6b7280;
+    line-height: 1.7;
+}
+
+
+/* CTA */
+
+.about-cta {
+    margin-top: 60px;
+
+    padding: 50px;
+
+    text-align: center;
+
+    background: #eef4ff;
+
+    border-radius: 15px;
+}
+
+.about-cta h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.about-cta p {
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .about-page {
+        padding: 30px 5%;
+    }
+
+    .about-hero h1 {
+        font-size: 38px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-cta {
+        padding: 35px 20px;
+    }
+}
+/* ================= COURSES PAGE ================= */
+
+.courses-page {
+    padding: 50px 7%;
+}
+
+.courses-hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.courses-hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.courses-hero p {
+    color: #6b7280;
+    font-size: 18px;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.public-course-card {
+    background: white;
+    padding: 30px;
+
+    border-radius: 14px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.public-course-card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+.public-course-card .course-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.public-course-card h2 {
+    margin-bottom: 12px;
+}
+
+.public-course-card p {
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.public-course-card span {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+.public-course-card .btn {
+    text-align: center;
+    margin-top: auto;
+}
+
+.locked-course {
+    border: 2px dashed #d1d5db;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .courses-page {
+        padding: 30px 5%;
+    }
+
+    .courses-hero h1 {
+        font-size: 36px;
+    }
+
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ================= UPLOAD PAGE ================= */
+
+.upload-page {
+    min-height: calc(100vh - 70px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 20px;
+}
+
+.upload-card {
+    width: 100%;
+    max-width: 600px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.upload-card h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.upload-subtitle {
+    text-align: center;
+
+    color: #6b7280;
+
+    margin-bottom: 30px;
+}
+
+.form-group textarea {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    resize: vertical;
+
+    outline: none;
+}
+
+.form-group textarea:focus {
+    border-color: #2563eb;
+}
+
+.form-group input[type="file"] {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px dashed #9ca3af;
+
+    border-radius: 8px;
+
+    background: #f9fafb;
+}
+
+.form-group small {
+    display: block;
+
+    margin-top: 7px;
+
+    color: #6b7280;
+
+    font-size: 13px;
+}
+
+#uploadMessage {
+    text-align: center;
+
+    margin-top: 20px;
+
+    font-weight: bold;
+}
+
+/* =========================
+   STUDY MATERIAL
+========================= */
+
+.material-page {
+    padding: 50px 7%;
+}
+
+.material-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.material-header h1 {
+    font-size: 45px;
+    margin-bottom: 12px;
+}
+
+.material-header p {
+    color: #6b7280;
+    font-size: 18px;
+}
+
+.material-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.material-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.material-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.material-card h2 {
+    margin-bottom: 10px;
+}
+
+.material-subject {
+    display: inline-block;
+
+    color: #2563eb;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+}
+
+.material-card p {
+    color: #6b7280;
+
+    line-height: 1.6;
+
+    margin-bottom: 15px;
+}
+
+.material-card small {
+    display: block;
+
+    color: #6b7280;
+
+    margin-bottom: 20px;
+}
+
+.material-btn {
+    display: inline-block;
+
+    padding: 11px 18px;
+
+    background: #2563eb;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 7px;
+
+    font-weight: bold;
+}
+
+.material-btn:hover {
+    background: #1d4ed8;
+}
+
+
+@media (max-width: 900px) {
+
+    .material-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .material-page {
+        padding: 30px 5%;
+    }
+
+    .material-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .material-header h1 {
+        font-size: 36px;
+    }
+}
+
+/* =========================
+   SEARCH & FILTER
+========================= */
+
+.material-controls {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 35px;
+    justify-content: center;
+}
+
+#materialSearch {
+    width: 450px;
+    padding: 15px 20px;
+
+    font-size: 17px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+
+    outline: none;
+}
+
+#materialSearch:focus {
+    border-color: #2563eb;
+}
+
+#subjectFilter {
+    padding: 15px 20px;
+
+    font-size: 17px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+
+    outline: none;
+
+    background: white;
+
+    cursor: pointer;
+}
+
+#subjectFilter:focus {
+    border-color: #2563eb;
+}
+
+.delete-material-btn {
+    display: block;
+
+    margin-top: 12px;
+
+    padding: 10px 18px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #dc2626;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.delete-material-btn:hover {
+    background: #b91c1c;
+}
+
+/* =========================
+   THEME TOGGLE
+========================= */
+
+.theme-toggle {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+
+    background: #f3f4f6;
+    color: #111827;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark-mode {
+    background: #111827;
+    color: #f9fafb;
+}
+
+
+/* HEADER */
+
+body.dark-mode header {
+    background: #1f2937;
+}
+
+body.dark-mode header h2 {
+    color: #ffffff;
+}
+
+
+/* NAVIGATION */
+
+body.dark-mode nav a {
+    color: #ffffff;
+}
+
+body.dark-mode nav a:hover {
+    color: #60a5fa;
+}
+
+
+/* HEADINGS */
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+    color: #ffffff;
+}
+
+
+/* NORMAL TEXT */
+
+body.dark-mode p,
+body.dark-mode small {
+    color: #d1d5db;
+}
+
+
+/* CARDS */
+
+body.dark-mode .material-card,
+body.dark-mode .feature-card,
+body.dark-mode .course-card,
+body.dark-mode .dashboard-card {
+    background: #1f2937;
+    color: #ffffff;
+}
+
+
+/* CARD TEXT */
+
+body.dark-mode .material-card h2,
+body.dark-mode .feature-card h2,
+body.dark-mode .course-card h2,
+body.dark-mode .dashboard-card h2 {
+    color: #ffffff;
+}
+
+
+/* SEARCH */
+
+body.dark-mode #materialSearch,
+body.dark-mode #subjectFilter {
+    background: #1f2937;
+    color: #ffffff;
+
+    border: 1px solid #4b5563;
+}
+
+
+/* SEARCH PLACEHOLDER */
+
+body.dark-mode #materialSearch::placeholder {
+    color: #9ca3af;
+}
+
+
+/* SELECT OPTIONS */
+
+body.dark-mode #subjectFilter option {
+    background: #1f2937;
+    color: #ffffff;
+}
+
+
+/* BUTTON */
+
+body.dark-mode .theme-toggle {
+    background: #374151;
+    color: #ffffff;
+}
+
+
+/* FOOTER */
+
+body.dark-mode footer {
+    background: #030712;
+    color: #ffffff;
+}
+
+body.dark-mode footer p {
+    color: #d1d5db;
+}
+
+
+/* INPUTS */
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+    background: #1f2937;
+    color: #ffffff;
+    border-color: #4b5563;
+}
+
+
+/* INPUT PLACEHOLDER */
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #9ca3af;
+}
+
+
+/* MATERIAL SUBJECT */
+
+body.dark-mode .material-subject {
+    color: #60a5fa;
+}
+
+/* =========================
+   HERO TEXT FIX
+========================= */
+
+.hero h1 {
+    color: #111827;
+}
+
+.hero p {
+    color: #4b5563;
+}
+
+
+/* DARK MODE */
+
+body.dark-mode .hero h1 {
+    color: #ffffff;
+}
+
+body.dark-mode .hero p {
+    color: #d1d5db;
+}
+
+/* =========================
+   DARK MODE - HERO FIX
+========================= */
+
+body.dark-mode .hero {
+    background: linear-gradient(
+        135deg,
+        #111827,
+        #1f2937
+    );
+}
+
+body.dark-mode .hero h1 {
+    color: #ffffff;
+}
+
+body.dark-mode .hero p {
+    color: #d1d5db;
+}
+/* =========================================
+   COMPLETE DARK MODE - ALL PAGES
+========================================= */
+
+body.dark-mode {
+    background: #111827;
+    color: #f9fafb;
+}
+
+
+/* ================= HEADER ================= */
+
+body.dark-mode header {
+    background: #0f172a;
+}
+
+body.dark-mode header h2 {
+    color: #ffffff;
+}
+
+body.dark-mode nav a {
+    color: #ffffff;
+}
+
+body.dark-mode nav a:hover {
+    color: #60a5fa;
+}
+
+
+/* ================= HERO ================= */
+
+body.dark-mode .hero {
+    background: linear-gradient(
+        135deg,
+        #111827,
+        #1f2937
+    );
+}
+
+body.dark-mode .hero h1 {
+    color: #ffffff;
+}
+
+body.dark-mode .hero p {
+    color: #d1d5db;
+}
+
+
+/* ================= ALL CARDS ================= */
+
+body.dark-mode .feature-card,
+body.dark-mode .stat-card,
+body.dark-mode .course-card,
+body.dark-mode .material-card,
+body.dark-mode .about-card,
+body.dark-mode .public-course-card,
+body.dark-mode .auth-card,
+body.dark-mode .upload-card,
+body.dark-mode .premium-section {
+    background: #1f2937;
+    color: #ffffff;
+}
+
+
+/* ================= HEADINGS ================= */
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+    color: #ffffff;
+}
+
+
+/* ================= PARAGRAPHS ================= */
+
+body.dark-mode p,
+body.dark-mode small {
+    color: #d1d5db;
+}
+
+
+/* ================= DASHBOARD ================= */
+
+body.dark-mode .dashboard-header p {
+    color: #d1d5db;
+}
+
+body.dark-mode .stat-card p {
+    color: #d1d5db;
+}
+
+body.dark-mode .course-card p {
+    color: #d1d5db;
+}
+
+
+/* ================= STUDY MATERIAL ================= */
+
+body.dark-mode .material-header p {
+    color: #d1d5db;
+}
+
+body.dark-mode .material-card p {
+    color: #d1d5db;
+}
+
+body.dark-mode .material-card small {
+    color: #9ca3af;
+}
+
+body.dark-mode .material-subject {
+    color: #60a5fa;
+}
+
+
+/* ================= PREMIUM / STUDY MATERIAL BOX ================= */
+
+body.dark-mode .premium-section {
+    background: #1f2937;
+}
+
+body.dark-mode .premium-section > p {
+    color: #d1d5db;
+}
+
+body.dark-mode .premium-content div {
+    background: #374151;
+    color: #ffffff;
+}
+
+
+/* ================= ABOUT ================= */
+
+body.dark-mode .about-hero p {
+    color: #d1d5db;
+}
+
+body.dark-mode .about-card p {
+    color: #d1d5db;
+}
+
+body.dark-mode .about-cta {
+    background: #1f2937;
+}
+
+body.dark-mode .about-cta p {
+    color: #d1d5db;
+}
+
+
+/* ================= COURSES ================= */
+
+body.dark-mode .courses-hero p {
+    color: #d1d5db;
+}
+
+body.dark-mode .public-course-card p {
+    color: #d1d5db;
+}
+
+body.dark-mode .public-course-card span {
+    color: #60a5fa;
+}
+
+
+/* ================= AUTH ================= */
+
+body.dark-mode .auth-subtitle,
+body.dark-mode .auth-footer {
+    color: #d1d5db;
+}
+
+body.dark-mode .auth-footer a {
+    color: #60a5fa;
+}
+
+
+/* ================= UPLOAD ================= */
+
+body.dark-mode .upload-subtitle {
+    color: #d1d5db;
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea,
+body.dark-mode .form-group input[type="file"] {
+    background: #111827;
+    color: #ffffff;
+    border-color: #4b5563;
+}
+
+body.dark-mode .form-group small {
+    color: #9ca3af;
+}
+
+
+/* ================= SEARCH ================= */
+
+body.dark-mode #materialSearch,
+body.dark-mode #subjectFilter {
+    background: #111827;
+    color: #ffffff;
+    border-color: #4b5563;
+}
+
+body.dark-mode #materialSearch::placeholder {
+    color: #9ca3af;
+}
+
+body.dark-mode #subjectFilter option {
+    background: #1f2937;
+    color: #ffffff;
+}
+
+
+/* ================= PROGRESS BAR ================= */
+
+body.dark-mode .progress-bar {
+    background: #374151;
+}
+
+
+/* ================= BUTTON ================= */
+
+body.dark-mode .theme-toggle {
+    background: #374151;
+    color: #ffffff;
+}
+
+body.dark-mode .theme-toggle:hover {
+    background: #4b5563;
+}
+
+
+/* ================= DELETE ================= */
+
+body.dark-mode .delete-material-btn {
+    background: #dc2626;
+    color: #ffffff;
+}
+
+
+/* ================= FOOTER ================= */
+
+body.dark-mode footer {
+    background: #030712;
+    color: #ffffff;
+}
+
+body.dark-mode footer p {
+    color: #d1d5db;
+}

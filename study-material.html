@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Study Material - StudyHub</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h2>StudyHub</h2>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="courses.html">Courses</a>
+
+            <a href="about.html">About</a>
+
+            <a href="dashboard.html">Dashboard</a>
+
+            <a href="upload.html">Upload Content</a>
+
+        </nav>
+
+    </header>
+
+
+    <main class="material-page">
+
+        <div class="material-controls">
+
+    <input
+        type="text"
+        id="materialSearch"
+        placeholder="Search study material..."
+    >
+
+    <select id="subjectFilter">
+
+        <option value="all">
+            All Subjects
+        </option>
+
+    </select>
+
+</div>
+
+        <section class="material-header">
+
+            <h1>Study Material 📚</h1>
+
+            <p>
+                Explore notes, PDFs and video lectures
+                shared by the StudyHub community.
+            </p>
+
+        </section>
+
+
+        <section
+            id="materialContainer"
+            class="material-grid"
+        >
+
+            <p class="loading">
+                Loading study material...
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 StudyHub. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
