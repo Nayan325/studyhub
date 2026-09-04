@@ -55,9 +55,18 @@ def get_connection():
 # HOME
 # =========================
 
+# =========================
+# FRONTEND
+# =========================
+
 @app.route("/")
 def home():
-    return "StudyHub Backend is running! 🚀"
+    return send_from_directory(BASE_DIR, "index.html")
+
+
+@app.route("/<path:filename>")
+def serve_frontend(filename):
+    return send_from_directory(BASE_DIR, filename)
 
 
 # =========================
